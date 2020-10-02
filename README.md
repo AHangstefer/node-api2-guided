@@ -15,3 +15,25 @@ In this project we will learn how to create a very simple Web API using `Node.js
 - [ ] type `npm install` to download dependencies.
 
 Please follow along as the instructor builds the API step by step.
+
+NOTES:
+
+Not restful     Restful
+/listUsers      GET /users
+/getUserById    Get /users/:id
+/updateUserById PUT or PATCH /users/:id
+/createUser     Post / users
+/deleteUserByID     DELETE /users/:id
+/listUserFriends    GET /users/:id/friends
+/getUserFriendById  GET /users/:userID/friends/:friendID
+/createUserFriend   POST/users/:id/friends
+
+"scripts": {
+		"start": "node index.js"
+	}
+
+    added to package.json and now we can run
+    npm start instead of 
+    node index.js
+    CUSTOM SCRIPT == npm run script-name
+
